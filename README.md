@@ -9,7 +9,7 @@ For this lab i am using VirtualBox 6.1.0 r135406 on Windows 10 home 1909. This i
     network - NAT,Host-Only adapter
 
 
-##Installed packages (follow these steps in order when installing)
+## Installed packages (follow these steps in order when installing)
 
 **Mininet 2.2.2**
 
@@ -71,7 +71,7 @@ _ONOS cli_
 
 
 
-##To test the sdn.py (use currect directory path), open new terminal window. 
+## To test the sdn.py (use currect directory path), open new terminal window. 
 
     sudo mn -c
     sudo -E python sdn.py 
