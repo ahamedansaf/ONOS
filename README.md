@@ -9,25 +9,25 @@ For this lab i am using VirtualBox 6.1.0 r135406 on Windows 10 home 1909. This i
     network - NAT,Host-Only adapter
 
 
-Installed packages (follow these steps in order when installing)
+##Installed packages (follow these steps in order when installing)
 
-Mininet 2.2.2
+**Mininet 2.2.2**
 
     sudo apt-get update
     sudo apt-get install mininet -y
 
 
 
-JDK 11.0.6 - required to run ONOS, don't install JDK SE 8 it gave me some strange errors in ONOS. use this tutorial to install JDK https://www.javahelps.com/2017/09/install-oracle-jdk-9-on-linux.html, to verify your installed java version enter "java --version" in a terminal window.
+**JDK 11.0.6** - required to run ONOS, don't install JDK SE 8 it gave me some strange errors in ONOS. use this tutorial to install JDK [https://www.javahelps.com/2017/09/install-oracle-jdk-9-on-linux.html](https://www.javahelps.com/2017/09/install-oracle-jdk-9-on-linux.html), to verify your installed java version enter _java --version_ in a terminal window.
 
     java --version
-        java 11.0.6 2020-01-14 LTS
+        `java 11.0.6 2020-01-14 LTS
         Java(TM) SE Runtime Environment 18.9 (build 11.0.6+8-LTS)
-        Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.6+8-LTS, mixed mode)
+        Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.6+8-LTS, mixed mode)`
 
 
 
-ONOS 2.2.0 (follow these steps to setup onos)
+**ONOS 2.2.0** (follow these steps to setup onos)
 
     sudo su
     cd /opt
@@ -38,7 +38,8 @@ ONOS 2.2.0 (follow these steps to setup onos)
     ./onos-service start
   
 Use this link to activate below mentions application in ONOS.(onos -> applications -> search and activate) 
-ONOS web interface - http://127.0.0.1:8181/onos/ui/   
+
+_ONOS web interface_ [http://127.0.0.1:8181/onos/ui/](http://127.0.0.1:8181/onos/ui/)   
 
     org.onosproject.drivers              Default Drivers
     org.onosproject.optical-model        Optical Network Model
@@ -51,7 +52,8 @@ ONOS web interface - http://127.0.0.1:8181/onos/ui/
 
   
 Open new terminal window, use password "karaf" and verify activated apps 
-ONOS cli
+
+_ONOS cli_
 
       ssh -p 8101 karaf@localhost
       apps -a -s
@@ -69,13 +71,13 @@ ONOS cli
 
 
 
-To test the sdn.py (use currect directory path)
+##To test the sdn.py (use currect directory path), open new terminal window. 
 
     sudo mn -c
     sudo -E python sdn.py 
     pingall
-    quit
-refresh after ONOS web interface after runnig "pingall" command.
+
+Refresh after ONOS web interface after runnig _pingall_ command.
 
 Good Luck
 
