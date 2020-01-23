@@ -71,7 +71,8 @@ _ONOS cli_
 
 
 
-## To test the sdn.py (use currect directory path), open new terminal window. 
+## To test the sdn.py 
+(use currect directory path), open new terminal window. 
 
     sudo mn -c
     sudo -E python sdn.py 
@@ -81,4 +82,4 @@ Refresh after ONOS web interface after runnig _pingall_ command.
 
 Good Luck
 
-*i created this for a coursework*
+*coursework*
