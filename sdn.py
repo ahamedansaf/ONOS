@@ -12,10 +12,10 @@ class topocls(Topo):
         super(topocls, self).__init__(**opts)
 
         # Add hosts and switches
-        h1 = self.addHost('Patient1',  ip='10.0.0.10')
-        h2 = self.addHost('Patient2',  ip='10.0.0.12')
-        h3 = self.addHost('Patient3',  ip='10.0.0.13')
-        h4 = self.addHost('Patient4',  ip='10.0.0.14')
+        h1 = self.addHost('Patient1',  ip='10.0.0.1')
+        h2 = self.addHost('Patient2',  ip='10.0.0.2')
+        h3 = self.addHost('Patient3',  ip='10.0.0.3')
+        h4 = self.addHost('Patient4',  ip='10.0.0.4')
 
         # Adding switches
         s1 = self.addSwitch('Hospital1')
